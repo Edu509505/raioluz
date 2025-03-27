@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5000px;
+    background-color: rgb(255, 255, 255);
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}
+
+main{
+    background-color: aqua;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 90px 0 0 0;
+}
+
+footer {
+    background-color: rgb(47, 112, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.conteudofooterpai {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.imgfooter {
+    width: 200px;
+    height: 200px;
+    background-image: url('./img/logosemfundo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border-radius: 50%;
+    margin: 0 0 1rem 0;
+    background-color: white;
+}
+
+.cardinvisivel {
+    margin: 3rem 0;
+    color: white;
+    font-size: 0.7rem;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.divisoriafooter {
+    width: 3px;
+    height: 300px;
+    background-color: white;
+    margin: 0 10%;
+}
+
+.parte2conteudofooter {
+    font-size: 0.7rem;
+    color: white;
+    width: 280px;
+
+}
+
+.finalfooter>h3 {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.iconeWhatsapp {
+    position: fixed;
+    bottom: 4.5rem;
+    right: 0rem;
+    display: none;
+    border: 20px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 200ms;
+    z-index: 1;
+
+}
+
+.iconeWhatsappButton {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('./img/iconespage/whatsapp.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    z-index: 1;
+    box-shadow: 0 0 15px black;
+}
+
+.iconeWhatsapp:hover {
+    transform: scale(1.1);
+}
+
+.go-top {
+    position: fixed;
+    bottom: 0rem;
+    right: 0rem;
+    display: none;
+    border: 20px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 200ms;
+    z-index: 1;
+}
+
+.buttonTop {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url('./img/iconespage/direito.png');
+    background-repeat: no-repeat;
+    background-size: 75% 75%;
+    background-position: center;
+    transform: rotate(-90deg);
+    z-index: 1;
+    box-shadow: 0 0 15px black;
+}
+
+.go-top:hover {
+    transform: scale(1.1);
+}

@@ -941,6 +941,11 @@ footer {
         width: 150px;
         height: 150px;
     }
+    .divisoriafooter{
+        width: unset;
+        height: unset;
+        background-color: unset;
+    }
 
 }
 
