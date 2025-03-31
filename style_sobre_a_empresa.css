@@ -12,7 +12,7 @@ body {
 }
 
 main {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(230, 230, 230);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ main {
 
 .imageminicio {
     width: 100%;
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,13 +61,164 @@ main {
         "SHRP" 0;
     font-size: 4rem;
     margin: 0;
+    animation: surgimentoh1 1000ms;
+}
+
+@keyframes surgimentoh1 {
+    0% {
+        opacity: 0;
+        margin-left: 200px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0px;
+    }
 }
 
 .efeito>h3 {
     font-weight: lighter;
     margin: 0;
+    animation: surgimentoh2 1000ms;
 }
 
+@keyframes surgimentoh2 {
+    0% {
+        opacity: 0;
+        margin-left: 200px;
+    }
+
+    10% {
+        opacity: 0;
+        margin-left: 200px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+
+.cardsPai {
+    width: 80%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    margin-top: -50px
+}
+
+.asideCard1,
+.asideCard2 {
+    width: 530px;
+    /* height: 420px; */
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    color: rgb(65, 65, 65);
+}
+
+.asideCard1.play{
+    display: flex;
+    animation: cardsAnimation 500ms;
+}
+
+.asideCard2.play{
+    display: flex;
+    animation: cardsAnimation2 500ms;
+}
+
+@keyframes cardsAnimation {
+    0% {
+        opacity: 0;
+        margin-top: 200px;
+    
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+@keyframes cardsAnimation2 {
+    0% {
+        opacity: 0;
+        margin-top: 200px;
+    
+    }
+
+    20% {
+        opacity: 0;
+        margin-top: 200px;
+    
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0px;
+
+    }
+}
+
+.tituloAsideCard{
+    font-size: 2rem;
+    font-weight: bold;
+    margin:3rem 2rem 0 2rem;
+}
+
+.textoAsideCard{
+    margin:1rem 2rem 2rem 2rem;
+    font-weight: 100;
+}
+
+.part2{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 50px;
+    margin: 0 0 3rem 0;
+    color: rgb(65, 65, 65);
+}
+
+.part2>h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 3rem 2rem 0 2rem;
+}
+
+.part2>h3{
+    font-weight: 100;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.part3{
+    width: 100%;
+    height: 500px;
+    margin: 0 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(47, 112, 0);
+}
+
+.img1part3{
+    width: 50%;
+    height: 100%;
+    background-image: url('./img/IMG-20240823-WA0043.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*FOOTER__________________________________________*/
 footer {
     background-color: rgb(47, 112, 0);
     width: 100%;

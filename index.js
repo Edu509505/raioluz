@@ -10,15 +10,16 @@ const opcoesMenuHamburguer2 = document.getElementById('opcoesMenuHamburguer2')
 const opcoesMenuHamburguer3 = document.getElementById('opcoesMenuHamburguer3')
 
 
-
-
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 700) {
+
+    console.log(window.scrollY)
+
+    if (window.scrollY > 600) {
 
         nav.classList.add('show');
         nav.classList.remove('show2');
 
-    } if (window.scrollY < 600) {
+    } if (window.scrollY == 0) {
 
         nav.classList.add('show2');
         nav.classList.remove('show');
@@ -41,6 +42,36 @@ window.addEventListener('scroll', () => {
         menuAtivo = true
     }
 })
+
+// window.addEventListener('scroll', () => {
+//     if (window.scrollY > 700) {
+
+//         nav.classList.add('show');
+//         nav.classList.remove('show2');
+
+//     } if (window.scrollY < 600) {
+
+//         nav.classList.add('show2');
+//         nav.classList.remove('show');
+
+//         menuLateral.classList.add('return')
+//         filtroMenuLateral.classList.add('return')
+//         logo.classList.remove('show')
+
+//         menuLateral.classList.remove('show')
+//         filtroMenuLateral.classList.remove('show')
+
+//         opcoesMenuHamburguer.classList.add('return')
+//         opcoesMenuHamburguer2.classList.add('return')
+//         opcoesMenuHamburguer3.classList.add('return')
+
+//         opcoesMenuHamburguer.classList.remove('show')
+//         opcoesMenuHamburguer2.classList.remove('show')
+//         opcoesMenuHamburguer3.classList.remove('show')
+
+//         menuAtivo = true
+//     }
+// })
 
 let menuAtivo = true
 
