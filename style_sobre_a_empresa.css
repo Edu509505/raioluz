@@ -202,20 +202,113 @@ main {
 
 .part3{
     width: 100%;
-    height: 500px;
     margin: 0 0 3rem 0;
     display: flex;
     flex-direction: column;
-    background-color: rgb(47, 112, 0);
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.img1part3{
-    width: 50%;
-    height: 100%;
-    background-image: url('./img/IMG-20240823-WA0043.jpg');
+.part3Pai{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url('./img/IMG-20240823-WA0154.jpg'); */
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+
+.informacoesfinaisparte4pai {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem 0;
+
+}
+
+.informacoesfinaisparte4pai>h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.informacoesfinaisparte4paiimg {
+    width: 40%;
+    height: 500px;
+    background-image: url('./img/IMG-20240823-WA0154.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    border-radius: 50px 0 50px 0;
+}
+
+.informacoespart4 {
+    width: 50%;
+    margin: 0 0 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.informacoespart4>h2 {
+    margin: 1rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    width: 95%;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    border: none;
+    /* Remove as linhas pretas ao redor */
+    outline: none;
+    /* Remove a borda de foco ao clicar no campo */
+}
+
+label {
+    margin: 1rem 0 0.2rem 0;
+}
+
+button {
+    margin: 1rem 0;
+    background-color: green;
+    color: white;
+    width: 80px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    /* Remove as linhas pretas ao redor */
+    outline: none;
+    /* Remove a borda de foco ao clicar no campo */
+    cursor: pointer;
+    transition: transform 200ms;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+textarea {
+    width: 95%;
+    resize: none;
+    border: none;
+    /* Remove as linhas pretas ao redor */
+    outline: none;
+    /* Remove a borda de foco ao clicar no campo */
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
 /*FOOTER__________________________________________*/
@@ -341,4 +434,123 @@ footer {
 
 .go-top:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 1115px){
+    .cardsPai{
+        height: 500px;
+    }
+    .asideCard1{
+        width: 420px;
+    }
+    .asideCard2{
+        width: 420px;
+    }
+}
+
+@media (max-width: 1080px){
+    .cardsPai{
+        height: 750px;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 0 3rem 0;
+    }
+    .asideCard1,
+    .asideCard2 {
+    width: 100%;
+    }
+    
+}
+
+@media (max-width: 814px){
+    .cardsPai{
+        height: 900px;
+    }
+}
+
+@media (max-width: 700px){
+    .informacoesfinaisparte4paiimg {
+        width: unset;
+        height: unset;
+        background-image: none;
+        background-repeat: unset;
+        background-size: unset;
+        background-position: unset;
+        margin: 0;
+    }
+
+    .informacoesfinaisparte4pai {
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .informacoespart4 {
+        margin: 0;
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .parte4 {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    label {
+        margin: 1rem 0 0 0;
+    }
+
+    input {
+        width: 100%;
+        padding: 0 0 0 0.5rem;
+        height: 30px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    .conteudofooterpai {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .conteudo>h1 {
+        margin: 2rem 0 0 0;
+    }
+}
+
+@media (max-width: 570px){
+    .cardsPai{
+        height: 1000px;
+    }
+    .efeito>h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 497px){
+    .cardsPai{
+        height: 1100px;
+    }
+}
+
+@media (max-width: 450px){
+    .cardsPai{
+        height: 1250px;
+    }
+
+}
+
+@media (max-width: 400px){
+    .cardsPai{
+        height: 1400px;
+    }
+    .divisoriafooter{
+        display: none;
+    }
 }

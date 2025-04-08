@@ -7,5 +7,4 @@ window.addEventListener('scroll', () => {
         asideCard1.classList.add('play')
         asideCard2.classList.add('play')
     }
-
 })

@@ -7,13 +7,14 @@
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="style_nav.css">
+    <link rel="stylesheet" href="./style_nav_others.css">
     <title>Raio Luz Empreiteira Ltda.</title>
 </head>
 
 <body>
     <div class="inicioPai">
 
-        <nav id="nav" class="nav">
+        <!--<nav id="nav" class="nav">
             <a href="index.html" class="logoClicavel">
                 <img src="./img/LogoComNomeSemCodNome.png" alt="" class="imgnav">
             </a>
@@ -29,9 +30,29 @@
             <a href="#" id="opcoesMenuHamburguer2">Nossos Serviços</a>
             <a href="#" id="opcoesMenuHamburguer3">Trabalhe conosco</a>
             
+        </menu> -->
+
+        <nav id="nav" class="navothers">
+            <a href="index.html" class="logoClicavel">
+                <img src="./img/LogoComNomeSemCodNome.png" alt="" class="imgnav">
+            </a>
+            <div class="menuHamburguer" id="logoNav"></div>
+            <a href="./sobre_a_empresa.html" class="selecaoNav" id="opcoesMenu_nav_others">Sobre a Empresa</a>
+            <a href="#" class="selecaoNav" id="opcoesMenu_nav_others2">Nossos Serviços</a>
+            <a href="#" class="selecaoNav" id="opcoesMenu_nav_others3">Trabalhe conosco</a>
+        </nav>
+    
+        <menu id="menuLateral">
+    
+            <a href="./index.html" id="opcoesMenuHamburguer_nav_others0">Página Inicial</a>
+            <a href="./sobre_a_empresa.html" id="opcoesMenuHamburguer_nav_others1">Sobre a Empresa</a>
+            <a href="#" id="opcoesMenuHamburguer_nav_others2">Nossos Serviços</a>
+            <a href="#" id="opcoesMenuHamburguer_nav_others3">Trabalhe conosco</a>
+    
         </menu>
 
         <div class="filtroMenuHamburger" id="filtroMenuLateral"></div>
+
         <div class="filtroNav">
             <div class="logoinicio"></div>
             <a href="https://wa.me/5513978160721" target="_blank">
@@ -290,6 +311,7 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="./index.js"></script>
+    <script src="./index_others.js"></script>
 </body>
 
 </html>

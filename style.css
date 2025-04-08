@@ -54,6 +54,7 @@ body {
     backdrop-filter: blur(8px);
     /* transition: backdrop-filter 300ms; */
     animation: iniciar 4s;
+    margin: 90px 0 0 0;
 }
 
 @keyframes iniciar {
